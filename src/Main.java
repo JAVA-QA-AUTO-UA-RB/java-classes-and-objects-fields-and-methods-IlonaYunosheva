@@ -14,7 +14,14 @@ public class Main {
 
                     round++;
                     System.out.println();
+
+                    System.out.println("\nСтатистика після бою:");
+                    hero1.showStats();
+                    hero2.showStats();
+                    System.out.println();
                 }
+
+
 
                 if (hero1.isAlive() && !hero2.isAlive()) {
                     System.out.println("Переможець: " + hero1.name + "!");
